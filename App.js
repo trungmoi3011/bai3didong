@@ -1,10 +1,14 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Square from './Square'; // Đường dẫn đến component Square
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Square color="red" />
+      <Square color="blue" />
+      <Square color="green" />
       <StatusBar style="auto" />
     </View>
   );
